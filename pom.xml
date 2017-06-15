@@ -10,6 +10,12 @@
     <packaging>maven-plugin</packaging>
 
     <name>HUSACCT Maven Plugin</name>
+    <repositories>
+        <repository>
+            <id>local-maven-repo</id>
+            <url>file:///${project.basedir}/local-maven-repo</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
